@@ -1,5 +1,5 @@
 import React from "react";
-import { useForm, SubmitHandler, FieldError } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 import Input from "../components/ui/forms/Input";
 import Link from "next/link";
 
@@ -92,14 +92,14 @@ const AuthForm: React.FC<AuthFormProps> = ({ type, onSubmit }) => {
         <div className="text-center mt-4">
           {type === "login" ? (
             <>
-              <span>Don't have an account?</span>{" "}
+              <span>Don&apos;t have an account?</span>
               <Link href="/register" className="text-[#B88E2F]">
                 Register here
               </Link>
             </>
           ) : (
             <>
-              <span>Already have an account?</span>{" "}
+              <span>Already have an account?</span>
               <Link href="/login" className="text-[#B88E2F]">
                 Login here
               </Link>
